@@ -251,6 +251,11 @@ function start(){
 }
 
 function Sec(){
+    
+
+    if (Number(sec.innerHTML) > 0 && Number(hour) > 0 && Number(min.innerHTML) == 0){
+        sec.innerHTML --
+    }
 
     if (Number(sec.innerHTML) == 0 && Number(min.innerHTML) == 0 && Number(hour.innerHTML) == 0){
         document.getElementById('addDiv').style.display = 'flex'
@@ -282,9 +287,9 @@ function Sec(){
 
 
     if(Number(sec.innerHTML) === 0 && Number(min.innerHTML) > 0){
-       
-       min.innerHTML --
        sec.innerHTML = 59
+       min.innerHTML --
+       
 
        
         document.getElementById('addDiv').style.display = 'none'
@@ -296,8 +301,8 @@ function Sec(){
     }
 
     if(Number(min.innerHTML) === 0 && Number(hour.innerHTML) > 0){
-        sec.innerHTML = 59
-        min.innerHTML = 59
+        
+        min.innerHTML = 60
         hour.innerHTML --
 
         document.getElementById('addDiv').style.display = 'none'
@@ -305,6 +310,8 @@ function Sec(){
         document.getElementById('AcStart').style.display = 'none'
         document.getElementById('AcZero').style.display = 'none'
         document.getElementById('AcStop').style.backgroundColor = 'red'
+
+        
     }
 
    

@@ -156,6 +156,12 @@ btnStop.addEventListener('click',function(){
     TStop()
 })
 
+//Link
+
+
+document.getElementById('github').addEventListener('click', function(){
+    window.open('https://github.com/fabcode01', '_blank')
+})
 
 
 

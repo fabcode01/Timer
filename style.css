@@ -8,7 +8,7 @@
 
 
 body{
-    background-color: #D9CEC1;
+    background-color: #ffffff;
 }
 
 
@@ -26,13 +26,22 @@ h2{
     background-color: #141414;
 }
 
-#addDiv, #divTimer, #outDiv{
+#addDiv, #divTimer, #outDiv, #wTimer{
+
+    
+    max-width: 700px;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 70px;
     user-select: none;
     
+}
+#wTimer{
+    max-width: 650px;
+    justify-content: space-between;
+    margin-top: 0;
 }
 
 
@@ -128,12 +137,6 @@ span{
     transition: all 0.5s;
 }
 
-#wTimer{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 13px;
-
-}
 
 
 
@@ -155,31 +158,29 @@ span{
 
 
 
-
-
-
-
-
-a{
-    position: fixed;
-    bottom: 0;
-    display: inline-block;
-    margin-top: 15px;
+footer{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
     padding: 5px;
-    color: aliceblue;
+
     background-color: #8C3232;
-    border-radius: 5px;
-    
-    text-decoration: none;
-    
-    
-   
-    
+    color: aliceblue;
+    border-radius: 10px;
 }
 
-a > p::after{
-    content: '\1F517';
+footer:hover{
+    background-color: #461515;
 }
+
+
+
+
+
+
 
 
 @media screen and (max-width: 480px){
@@ -190,9 +191,12 @@ a > p::after{
 
 
     #actions{
+        width: 300px;
         font-size: 0.6em;
         
+        margin: auto;
         margin-top: 100px;
+        
     }
 
     #addDiv > .addTimeH, .addTimeM, .addTimeS{
@@ -202,6 +206,20 @@ a > p::after{
     #outDiv > .outTimeH, .outTimeM, .outTimeS{
         width: 80px;
     }
+
+    body{
+        background-color: #D9CEC1;
+    }
+}
+
+
+#contain{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #D9CEC1;
+    border-radius: 10px;
 }
 
 

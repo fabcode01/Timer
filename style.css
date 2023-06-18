@@ -1,0 +1,208 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: #D9CEC1;
+}
+
+
+
+
+
+h2{
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    color: rgb(238, 247, 255);
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #141414;
+}
+
+#addDiv, #divTimer, #outDiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+    user-select: none;
+    
+}
+
+
+
+span{
+    font-size: 5em;
+
+}
+
+#addDiv > .addTimeH, .addTimeM, .addTimeS{
+    display: flex;
+    
+    text-align: center;
+    display: inline;
+    
+    font-size: 5em;
+    color: aliceblue;
+    
+    background-color: #8C3232;
+    border-radius: 10px;
+
+
+    width: 100px;
+
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+#divTimer > .hour, .minutes, .seconds{
+    display: flex;
+    
+    text-align: center;
+    display: inline;
+    
+    font-size: 8em;
+    color: aliceblue;
+    
+    
+    background-color: #202020;
+    border-radius: 10px;
+    
+
+    width: 180px;
+}
+
+#outDiv > .outTimeH, .outTimeM, .outTimeS{
+    display: flex;
+    
+    text-align: center;
+    display: inline;
+    
+    font-size: 5em;
+    color: aliceblue;
+    
+    
+    background-color: #8C3232;
+    border-radius: 10px;
+
+
+    width: 100px;
+
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+#actions{
+    user-select: none;
+    display: flex;
+    width: 400px;
+    
+    margin: auto;
+    margin-top: 150px;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+#actions .material-symbols-outlined{
+    user-select: none;
+    text-align: center;
+
+    padding: 10px;
+    font-size: 4em;
+    
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #3a8a3a;
+
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#wTimer{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 13px;
+
+}
+
+
+
+
+
+
+
+
+/*Hovers*/
+
+#buttons:active{
+    background-color: #000000;
+}
+
+#buttons:hover, #AcStart:active, #AcZero:active, #AcStop:active{
+    box-shadow: 5px 9px 12px 0px rgba(0, 0, 0, 0.363);
+    transform: scale(1.1);
+} 
+
+
+
+
+
+
+
+
+a{
+    position: fixed;
+    bottom: 0;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px;
+    color: aliceblue;
+    background-color: #8C3232;
+    border-radius: 5px;
+    
+    text-decoration: none;
+    
+    
+   
+    
+}
+
+a > p::after{
+    content: '\1F517';
+}
+
+
+@media screen and (max-width: 480px){
+    #divTimer > .hour, .minutes, .seconds{
+        font-size: 5em;
+    }
+
+
+
+    #actions{
+        font-size: 0.6em;
+        
+        margin-top: 100px;
+    }
+
+    #addDiv > .addTimeH, .addTimeM, .addTimeS{
+        width: 80px;
+    }
+
+    #outDiv > .outTimeH, .outTimeM, .outTimeS{
+        width: 80px;
+    }
+}
+
+
+
